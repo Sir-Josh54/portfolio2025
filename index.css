@@ -413,6 +413,15 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
 }
 
+.header__text-box {
+    display: flex; /* Affichage en ligne */
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+    gap: 20px; /* Espacement entre l’image et le texte */
+    text-align: center;
+    flex-wrap: wrap; /* Permet d’éviter tout débordement sur petits écrans */
+}
+
 .header__text {
     position: absolute;
     top: 50%;
