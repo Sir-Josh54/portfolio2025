@@ -507,7 +507,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .Face_jpg img {
-    width: 60px; /* Ajuste la taille de l'image */
+    width: 120px; /* Ajuste la taille de l'image */
     height: auto;
     border-radius: 50%; /* Rend l’image ronde */
   }
