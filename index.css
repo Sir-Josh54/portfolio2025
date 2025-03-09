@@ -492,6 +492,12 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.Face_jpg img {
+    width: 120px; /* Ajuste la taille de l'image */
+    height: auto;
+    border-radius: 50%; /* Rend l’image ronde */
+  }
+
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
