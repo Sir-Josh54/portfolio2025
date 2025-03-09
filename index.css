@@ -423,10 +423,14 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .header__text {
+    max-width: 400px; /* Évite que le texte soit trop large */
+}
+
+/*.header__text {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-}
+}*/
 
 .header__text p {
     margin: 1.5rem 0 3.5rem;
@@ -435,13 +439,14 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-medium);
 }
 
-@media(max-width: 500px) {
-    .header {
-        text-align: center;
+@media(max-width: 600px) {
+    .header__text-box {
+        flex-direction: column; /* Passe en colonne sur petits écrans */
+        text-align: center; /* Centre le texte */
     }
 
-    .header__text p {
-        transform: scale(.8);
+    .Face_jpg img {
+        width: 80px; /* Réduit la taille sur mobiles */
     }
 }
 
