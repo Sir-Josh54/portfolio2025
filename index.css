@@ -446,7 +446,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 
     .Face_jpg img {
-        width: 80px; /* Réduit la taille sur mobiles */
+        width: 160px; /* Réduit la taille sur mobiles */
     }
 }
 
