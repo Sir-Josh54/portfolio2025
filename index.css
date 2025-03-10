@@ -424,19 +424,22 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__text {
     max-width: 600px; /* Évite que le texte soit trop large */
+    transform: translateY(-50%);
 }
 
-/*.header__text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}*/
+.header__text p::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: rgb(109, 41, 41); /* Couleur de la ligne */
+    margin-top: 10px; /* Espacement entre le texte et la ligne */
+}
 
 .header__text p {
-    margin: 1.5rem 0 3.5rem;
-    max-width: var(--container-medium-width);
-    font-family: 'Jost', sans-serif;
-    font-size: var(--font-size-medium);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; /* Espacement entre le texte et la ligne */
 }
 
 @media(max-width: 600px) {
