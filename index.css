@@ -423,7 +423,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .header__text {
-    max-width: 400px; /* Évite que le texte soit trop large */
+    max-width: 600px; /* Évite que le texte soit trop large */
 }
 
 /*.header__text {
